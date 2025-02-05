@@ -3,4 +3,10 @@ project(hpMMS__v1_0_)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(hpMMS__v1_0_ main.cpp)
+add_executable(hpMMS__v1_0_ main.cpp
+        GUI.h
+        functions.h
+        GUI.cpp
+        functions.cpp
+        stats.cpp
+        stats.h)

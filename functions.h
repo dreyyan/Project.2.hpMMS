@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+#include <chrono>
+#include <thread>
+#ifndef FUNCTIONS_H
+#define FUNCTIONS_H
+void add_items();
+void remove_items();
+void view_tables();
+void display_statistics();
+void exit_main_menu();
+#endif //FUNCTIONS_H
