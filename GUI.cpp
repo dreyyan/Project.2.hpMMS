@@ -36,8 +36,8 @@ void display_main_menu() {
     while (true) {
         int choice;
         display_header();
-        std::cout << "[1] || Add Item/s\n";
-        std::cout << "[2] || Remove Item/s\n";
+        std::cout << "[1] || Manage Items\n";
+        std::cout << "[2] || Manage Categories\n";
         std::cout << "[3] || View Table/s\n";
         std::cout << "[4] || Statistics\n";
         std::cout << "[5] || Exit\n";
@@ -51,18 +51,18 @@ void display_main_menu() {
         if (std::cin.fail()) {
             std::cin.clear();
             std::cin.ignore();
-            std::cerr << "[ ERROR | Input Failure ]\n";
+            std::cerr << "[ ERROR | Invalid Number ]\n";
         }
 
         clear_screen(); // Clear Screen Before Invoking Function/s
         // Invoke Function Based on Choice
         switch (choice) {
-            case 1: display_header(); add_items(); break;
-            case 2: display_header(); remove_items(); break;
-            case 3: display_header(); view_tables(); break;
-            case 4: display_header(); display_statistics(); break;
+            case 1: manage_items(); break;
+            case 2: manage_categories(); break;
+            case 3: view_tables(); break;
+            case 4: display_statistics(); break;
             case 5: exit_main_menu(); break;
-            default: std::cerr << "[ ERROR | Invalid Choice ]\n"; break;
+            default: std::cerr << "[ ERROR | Invalid Number ]\n"; break;
         } return_to_menu();
     }
 }

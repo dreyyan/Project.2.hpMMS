@@ -1,4 +1,0 @@
-"C:\Users\User\Downloads\setup\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Users/User/Downloads/setup/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Code\Personal Projects\hpMMS (v1.0)" -B "C:\Code\Personal Projects\hpMMS (v1.0)\cmake-build-debug"
--- Configuring done (0.3s)
--- Generating done (0.1s)
--- Build files have been written to: C:/Code/Personal Projects/hpMMS (v1.0)/cmake-build-debug
